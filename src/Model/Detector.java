@@ -12,7 +12,6 @@ public static void start(){
 }
 public static void AmountOfTexts(int numberOfTheAmount){
   for (int i = 0; i < numberOfTheAmount; i++) {
-
   }
 
 }
