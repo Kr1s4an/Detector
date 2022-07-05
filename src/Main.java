@@ -1,6 +1,11 @@
+import Model.Detector;
+import ReturnAnswer.Communicator;
+import getText.GetText;
+
 public class Main {
 
   public static void main(String[] args) {
-    System.out.println("Hello world!");
+    Detector.start();
+
   }
 }
