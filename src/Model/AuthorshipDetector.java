@@ -10,4 +10,5 @@ public interface AuthorshipDetector<LinguisticSignature> {
 
   String findAuthor(InputStream mysteryText);
 
+
 }
