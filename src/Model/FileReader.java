@@ -16,7 +16,7 @@ public class FileReader {
 
   public static void getFile() throws IOException {
 
-    String fileName = "C:/Users/Krisi/Desktop/resources/mysteryFiles/mystery1.txt";
+    String fileName = "C:/Users/Krisi/Desktop/IJ/Detector/src/resources/mysteryFiles/mystery1.txt";
 
     try (FileInputStream fis = new FileInputStream(fileName)) {
 
