@@ -18,17 +18,17 @@ public class FileReader {
 
     String fileName = "C:/Users/Krisi/Desktop/IJ/Detector/src/resources/mysteryFiles/mystery1.txt";
 
-    try (FileInputStream fis = new FileInputStream(fileName)) {
+    try (FileInputStream fileInputStream = new FileInputStream(fileName)) {
 
 
       int i = 0;
-
+      int readingBytesAtTime = 1024;
       do {
 
-        byte[] buf = new byte[1024];
-        i = fis.read(buf);
+        byte[] buffer = new byte[readingBytesAtTime];
+        i = fileInputStream.read(buffer);
 
-        String value = new String(buf, StandardCharsets.UTF_8);
+        String value = new String(buffer, StandardCharsets.UTF_8);
         System.out.print(value);
 
       } while (i != -1);
