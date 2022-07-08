@@ -1,16 +1,15 @@
 package Model;
 
-public class Split {
+import java.util.Scanner;
 
-  public static void getSplitWords() {
-    String test = "My first arg test";
-    String[] words = test.split(" ");
+public class Split {
+  public static Scanner scanner = new Scanner(System.in);
+  public static void getSplitByWords() {
+    String text = scanner.nextLine();
+    String[] words = text.split(" ");
 
     for (String word : words)
       System.out.println(word);
-    /*String str = "Hey this is Ram";
-    String [] words = str. split(" ", 3);
-    for (String word : words)
-      System. out. println(word);*/
+
   }
 }

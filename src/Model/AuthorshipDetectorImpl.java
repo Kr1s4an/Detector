@@ -7,4 +7,18 @@ public class AuthorshipDetectorImpl implements AuthorshipDetector {
 
   }
 
+  @Override
+  public Object calculateSignature(InputStream mysteryText) {
+    return null;
+  }
+
+  @Override
+  public double calculateSimilarity(Object firstSignature, Object secondSignature) {
+    return 0;
+  }
+
+  @Override
+  public String findAuthor(InputStream mysteryText) {
+    return null;
+  }
 }

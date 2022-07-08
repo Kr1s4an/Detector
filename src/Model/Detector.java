@@ -5,7 +5,9 @@ import getText.GetText;
 import java.util.Scanner;
 
 public class Detector {
-static Scanner scanner = new Scanner(System.in);
+
+  static Scanner scanner = new Scanner(System.in);
+
   public static void start() {
     Communicator.communicate();
     Communicator.getAmountOfTexts();
@@ -17,7 +19,8 @@ static Scanner scanner = new Scanner(System.in);
     String[] texts = new String[numberOfTheAmount];
     for (int i = 0; i < texts.length; i++) {
       Communicator.getInputText();
-      texts [i] = GetText.getInputText();
+      texts[i] = GetText.getInputText();
     }
   }
+
 }
