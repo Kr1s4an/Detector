@@ -2,7 +2,6 @@ package Model;
 
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
@@ -14,9 +13,9 @@ public class FileReader {
   }
 
 
-  public static void getFile() throws IOException {
+  public static String getFile() throws IOException {
 
-    String fileName = "C:/Users/Krisi/Desktop/IJ/Detector/src/resources/mysteryFiles/mystery1.txt";
+    String fileName = "C:/Users/Krisi/Desktop/IJ/Detector/src/resources/mysteryFiles/mystery2.txt";
 
     try (FileInputStream fileInputStream = new FileInputStream(fileName)) {
 
@@ -29,13 +28,12 @@ public class FileReader {
         i = fileInputStream.read(buffer);
 
         String value = new String(buffer, StandardCharsets.UTF_8);
-        System.out.print(value);
+        return value;
 
       } while (i != -1);
 
 
     }
-
   }
 }
 
