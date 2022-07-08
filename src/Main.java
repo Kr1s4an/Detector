@@ -7,7 +7,7 @@ public class Main {
   public static Scanner scanner = new Scanner(System.in);
 
   public static void main(String[] args) {
-    //Detector.start();
-    Split.getSplitByWords();
+    Detector detector = new Detector();
+    //Split.getSplitByWords();
   }
 }

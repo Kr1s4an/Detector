@@ -5,6 +5,9 @@ import getText.GetText;
 import java.util.Scanner;
 
 public class Detector {
+  public Detector(){
+    start();
+  }
 
   static Scanner scanner = new Scanner(System.in);
 
@@ -22,5 +25,6 @@ public class Detector {
       texts[i] = GetText.getInputText();
     }
   }
+
 
 }
