@@ -1,13 +1,17 @@
 import Model.Detector;
 import Model.FileReader;
+import Model.Split;
 import java.io.IOException;
-//import Model.Split;
+import java.util.Scanner;
 
 public class Main {
 
+  public static Scanner scanner = new Scanner(System.in);
+
   public static void main(String[] args) throws IOException {
-    // Detector.start();
-    FileReader.getFile();
-    //Split.getSplitWords();
+    //Detector detector = new Detector();
+    //Split.getSplitByWords();
+    //FileReader.getFile();
+    Detector.start();
   }
 }
