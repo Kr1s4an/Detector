@@ -9,9 +9,6 @@ public class Main {
   public static Scanner scanner = new Scanner(System.in);
 
   public static void main(String[] args) throws IOException {
-    //Detector detector = new Detector();
-    //Split.getSplitByWords();
-    //FileReader.getFile();
     Detector.start();
   }
 }
